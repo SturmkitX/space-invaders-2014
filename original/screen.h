@@ -6,7 +6,6 @@
 #include <SDL_mixer.h>
 #include <SDL_ttf.h>
 #include <SDL_net.h>
-#include <windows.h>
 #include <vector>
 #include <string>
 #include <cstring>

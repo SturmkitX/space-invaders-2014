@@ -1,0 +1,287 @@
+==2149== Memcheck, a memory error detector
+==2149== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2149== Using Valgrind-3.14.0.GIT and LibVEX; rerun with -h for copyright info
+==2149== Command: ./nave
+==2149== Parent PID: 493
+==2149== 
+==2149== Conditional jump or move depends on uninitialised value(s)
+==2149==    at 0xBA2F0A4: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9D5435: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9D7C7D: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBAED5FF: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBAEEB2D: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBA0F1F4: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBA0F571: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBA0F607: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBAECFE4: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBAF5EE0: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB71A875: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB71ABF7: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149== 
+==2149== Conditional jump or move depends on uninitialised value(s)
+==2149==    at 0xBA2F0A4: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9D5435: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9D5CEC: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBB21180: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBB225C0: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBA0F1F4: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBA0F571: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBA0F607: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBB21466: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBAF9EFA: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9CC104: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9AEEAB: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149== 
+==2149== Conditional jump or move depends on uninitialised value(s)
+==2149==    at 0x110B58: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10C9F7: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10E242: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BCD5: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149== 
+==2149== Syscall param write(buf) points to uninitialised byte(s)
+==2149==    at 0x58317DF: write (in /usr/lib/libc-2.28.so)
+==2149==    by 0x57C185C: _IO_file_write@@GLIBC_2.2.5 (in /usr/lib/libc-2.28.so)
+==2149==    by 0x57C0BBE: new_do_write (in /usr/lib/libc-2.28.so)
+==2149==    by 0x57C29D8: _IO_do_write@@GLIBC_2.2.5 (in /usr/lib/libc-2.28.so)
+==2149==    by 0x57C0A67: _IO_file_sync@@GLIBC_2.2.5 (in /usr/lib/libc-2.28.so)
+==2149==    by 0x57B5DB0: fflush (in /usr/lib/libc-2.28.so)
+==2149==    by 0xB9E1F4B: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9E3806: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9E0F8B: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9D54DA: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9D7C7D: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xBAED5FF: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==  Address 0xd0ac3dc is 2,364 bytes inside a block of size 4,096 alloc'd
+==2149==    at 0x483777F: malloc (vg_replace_malloc.c:299)
+==2149==    by 0x57B5790: _IO_file_doallocate (in /usr/lib/libc-2.28.so)
+==2149==    by 0x57C3BBF: _IO_doallocbuf (in /usr/lib/libc-2.28.so)
+==2149==    by 0x57C1C14: _IO_file_xsgetn (in /usr/lib/libc-2.28.so)
+==2149==    by 0x57B677A: fread (in /usr/lib/libc-2.28.so)
+==2149==    by 0xB9E165F: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9E2366: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9E2505: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9E34D4: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9E3901: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9E1029: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9D55AA: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149== 
+==2149== Invalid read of size 8
+==2149==    at 0x48C1DAC: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x491C0E8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x492036C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x10FC95: Screen::close() (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BC46: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==  Address 0xd933eb0 is 0 bytes inside an unallocated block of size 3,504 in arena "client"
+==2149== 
+==2149== Invalid read of size 8
+==2149==    at 0x48C260C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x491C0F6: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x492036C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x10FC95: Screen::close() (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BC46: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==  Address 0xd3a5ed0 is 0 bytes inside a block of size 480 free'd
+==2149==    at 0x48389AB: free (vg_replace_malloc.c:530)
+==2149==    by 0x48E610E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x10FB5C: Screen::init() (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BC2E: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==  Block was alloc'd at
+==2149==    at 0x4839B65: calloc (vg_replace_malloc.c:752)
+==2149==    by 0x48E6070: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x48C5687: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x48BFB5D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x491C5A1: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x491D949: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x10FB35: Screen::init() (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BC2E: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149== 
+==2149== Invalid read of size 8
+==2149==    at 0x491F72D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x48C3E2D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x48C4016: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x48C1E2D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x48C2644: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x10FC9E: Screen::close() (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BC46: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==  Address 0xcfefd00 is 0 bytes inside a block of size 216 free'd
+==2149==    at 0x48389AB: free (vg_replace_malloc.c:530)
+==2149==    by 0x48E610E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x10FC95: Screen::close() (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BC46: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==  Block was alloc'd at
+==2149==    at 0x4839B65: calloc (vg_replace_malloc.c:752)
+==2149==    by 0x48E6070: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x492094F: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x10FB20: Screen::init() (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BC2E: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149== 
+==2149== Invalid read of size 8
+==2149==    at 0x491BF6E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x48C266B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x10FC9E: Screen::close() (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BC46: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==  Address 0xcfefd00 is 0 bytes inside a block of size 216 free'd
+==2149==    at 0x48389AB: free (vg_replace_malloc.c:530)
+==2149==    by 0x48E610E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x10FC95: Screen::close() (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BC46: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==  Block was alloc'd at
+==2149==    at 0x4839B65: calloc (vg_replace_malloc.c:752)
+==2149==    by 0x48E6070: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x492094F: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x10FB20: Screen::init() (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BC2E: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149== 
+==2149== Invalid read of size 8
+==2149==    at 0x491F72D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x48C3E2D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x48C5284: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x10FC9E: Screen::close() (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BC46: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==  Address 0xcfefd00 is 0 bytes inside a block of size 216 free'd
+==2149==    at 0x48389AB: free (vg_replace_malloc.c:530)
+==2149==    by 0x48E610E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x10FC95: Screen::close() (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BC46: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==  Block was alloc'd at
+==2149==    at 0x4839B65: calloc (vg_replace_malloc.c:752)
+==2149==    by 0x48E6070: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x492094F: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x10FB20: Screen::init() (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BC2E: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149== 
+==2149== 
+==2149== HEAP SUMMARY:
+==2149==     in use at exit: 829,323 bytes in 1,077 blocks
+==2149==   total heap usage: 116,321 allocs, 115,244 frees, 500,008,801 bytes allocated
+==2149== 
+==2149== 1 bytes in 1 blocks are definitely lost in loss record 2 of 252
+==2149==    at 0x483777F: malloc (vg_replace_malloc.c:299)
+==2149==    by 0x733479D: _XlcDefaultMapModifiers (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x7334B97: XSetLocaleModifiers (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x494C5ED: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x495300C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x4920ECC: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x489F187: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x10FA7D: Screen::init() (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BC2E: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149== 
+==2149== 192 (16 direct, 176 indirect) bytes in 1 blocks are definitely lost in loss record 179 of 252
+==2149==    at 0x4839D7B: realloc (vg_replace_malloc.c:826)
+==2149==    by 0x732AE2B: ??? (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x732B28D: ??? (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x732CC4E: ??? (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x732D4B7: _XlcCreateLC (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x734A420: _XlcDefaultLoader (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x73349F5: _XOpenLC (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x7334B38: _XlcCurrentLC (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x7334B6E: XSetLocaleModifiers (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x494C552: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x495300C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x4920ECC: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149== 
+==2149== 1,688 (136 direct, 1,552 indirect) bytes in 1 blocks are definitely lost in loss record 216 of 252
+==2149==    at 0x4839D7B: realloc (vg_replace_malloc.c:826)
+==2149==    by 0x732AE2B: ??? (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x732B28D: ??? (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x732CC4E: ??? (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x732D4B7: _XlcCreateLC (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x734E400: _XlcUtf8Loader (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x73349F5: _XOpenLC (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x7334B38: _XlcCurrentLC (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x7334B6E: XSetLocaleModifiers (in /usr/lib/libX11.so.6.3.0)
+==2149==    by 0x494C5ED: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x495300C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x4920ECC: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149== 
+==2149== 3,764 (96 direct, 3,668 indirect) bytes in 1 blocks are definitely lost in loss record 226 of 252
+==2149==    at 0x4839B65: calloc (vg_replace_malloc.c:752)
+==2149==    by 0x48E6070: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x4919FD1: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x4FF18CE: TTF_RenderUTF8_Solid (in /usr/lib/libSDL2_ttf-2.0.so.0.14.0)
+==2149==    by 0x4FF1CB9: TTF_RenderText_Solid (in /usr/lib/libSDL2_ttf-2.0.so.0.14.0)
+==2149==    by 0x111E88: afisare_status(int, int, SDL_Renderer*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x110A68: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10C9F7: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10E242: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BCD5: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149== 
+==2149== 6,049 (3,824 direct, 2,225 indirect) bytes in 1 blocks are definitely lost in loss record 237 of 252
+==2149==    at 0x4839B65: calloc (vg_replace_malloc.c:752)
+==2149==    by 0x9EDF2B1: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+==2149==    by 0x9E886CE: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+==2149==    by 0xB9AE6D3: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9B50E9: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB9B287D: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0x9E88465: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+==2149==    by 0x9E88678: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+==2149==    by 0xB6A4D06: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB6A5C5B: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB6A692C: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149==    by 0xB6A6C9D: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+==2149== 
+==2149== 11,072 (96 direct, 10,976 indirect) bytes in 1 blocks are definitely lost in loss record 243 of 252
+==2149==    at 0x4839B65: calloc (vg_replace_malloc.c:752)
+==2149==    by 0x48E6070: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x4919FD1: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x4FF18CE: TTF_RenderUTF8_Solid (in /usr/lib/libSDL2_ttf-2.0.so.0.14.0)
+==2149==    by 0x4FF1CB9: TTF_RenderText_Solid (in /usr/lib/libSDL2_ttf-2.0.so.0.14.0)
+==2149==    by 0x111E88: afisare_status(int, int, SDL_Renderer*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x111663: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10C9F7: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10E242: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BCD5: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149== 
+==2149== 32,456 (30,992 direct, 1,464 indirect) bytes in 1 blocks are definitely lost in loss record 248 of 252
+==2149==    at 0x483777F: malloc (vg_replace_malloc.c:299)
+==2149==    by 0x48E6032: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x4FF0D8F: TTF_OpenFontIndexRW (in /usr/lib/libSDL2_ttf-2.0.so.0.14.0)
+==2149==    by 0x111E27: afisare_status(int, int, SDL_Renderer*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x110A68: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10C9F7: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10E242: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BCD5: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149== 
+==2149== 34,584 (30,992 direct, 3,592 indirect) bytes in 1 blocks are definitely lost in loss record 249 of 252
+==2149==    at 0x483777F: malloc (vg_replace_malloc.c:299)
+==2149==    by 0x48E6032: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x4FF0D8F: TTF_OpenFontIndexRW (in /usr/lib/libSDL2_ttf-2.0.so.0.14.0)
+==2149==    by 0x111E27: afisare_status(int, int, SDL_Renderer*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x111663: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10C9F7: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10E242: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BCD5: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149== 
+==2149== 63,472 (1,536 direct, 61,936 indirect) bytes in 16 blocks are definitely lost in loss record 251 of 252
+==2149==    at 0x4839B65: calloc (vg_replace_malloc.c:752)
+==2149==    by 0x48E6070: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x4919FD1: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x4FF18CE: TTF_RenderUTF8_Solid (in /usr/lib/libSDL2_ttf-2.0.so.0.14.0)
+==2149==    by 0x4FF1CB9: TTF_RenderText_Solid (in /usr/lib/libSDL2_ttf-2.0.so.0.14.0)
+==2149==    by 0x111E88: afisare_status(int, int, SDL_Renderer*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x1112E0: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10C9F7: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10E242: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BCD5: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149== 
+==2149== 520,928 (495,872 direct, 25,056 indirect) bytes in 16 blocks are definitely lost in loss record 252 of 252
+==2149==    at 0x483777F: malloc (vg_replace_malloc.c:299)
+==2149==    by 0x48E6032: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+==2149==    by 0x4FF0D8F: TTF_OpenFontIndexRW (in /usr/lib/libSDL2_ttf-2.0.so.0.14.0)
+==2149==    by 0x111E27: afisare_status(int, int, SDL_Renderer*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x1112E0: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10C9F7: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10E242: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/nave)
+==2149==    by 0x10BCD5: main (in /home/bogdan/space_invaders_2015/original/nave)
+==2149== 
+==2149== LEAK SUMMARY:
+==2149==    definitely lost: 563,561 bytes in 40 blocks
+==2149==    indirectly lost: 110,645 bytes in 292 blocks
+==2149==      possibly lost: 0 bytes in 0 blocks
+==2149==    still reachable: 155,117 bytes in 745 blocks
+==2149==         suppressed: 0 bytes in 0 blocks
+==2149== Reachable blocks (those to which a pointer was found) are not shown.
+==2149== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==2149== 
+==2149== For counts of detected and suppressed errors, rerun with: -v
+==2149== Use --track-origins=yes to see where uninitialised values come from
+==2149== ERROR SUMMARY: 46 errors from 19 contexts (suppressed: 0 from 0)

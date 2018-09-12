@@ -1,0 +1,1909 @@
+desc: (none)
+cmd: ./iesire
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=18957959
+mem_heap_B=217108
+mem_heap_extra_B=7188
+mem_stacks_B=0
+heap_tree=detailed
+n16: 217108 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72704 0x5499469: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:123)
+  n1: 72704 0x4010548: call_init.part.0 (in /usr/lib/ld-2.28.so)
+   n1: 72704 0x4010648: _dl_init (in /usr/lib/ld-2.28.so)
+    n0: 72704 0x4002038: ??? (in /usr/lib/ld-2.28.so)
+ n0: 23900 in 92 places, all below massif's threshold (1.00%)
+ n1: 21152 0x7416DE0: xcb_connect_to_fd (in /usr/lib/libxcb.so.1.1.0)
+  n1: 21152 0x741AF94: xcb_connect_to_display_with_auth_info (in /usr/lib/libxcb.so.1.1.0)
+   n1: 21152 0x730D119: _XConnectXCB (in /usr/lib/libX11.so.6.3.0)
+    n2: 21152 0x72FDB24: XOpenDisplay (in /usr/lib/libX11.so.6.3.0)
+     n1: 21152 0x494849F: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n1: 21152 0x4916E1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 21152 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 21152 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 21152 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 16472 0x63722F0: g_malloc (in /usr/lib/libglib-2.0.so.0.5800.0)
+  n1: 16384 0x6367EF4: ??? (in /usr/lib/libglib-2.0.so.0.5800.0)
+   n1: 16384 0x4010548: call_init.part.0 (in /usr/lib/ld-2.28.so)
+    n1: 16384 0x4010648: _dl_init (in /usr/lib/ld-2.28.so)
+     n0: 16384 0x4002038: ??? (in /usr/lib/ld-2.28.so)
+  n0: 88 in 1 place, below massif's threshold (1.00%)
+ n2: 16384 0x72FDE28: XOpenDisplay (in /usr/lib/libX11.so.6.3.0)
+  n1: 16384 0x494849F: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+   n1: 16384 0x4916E1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+    n1: 16384 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 16384 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+      n0: 16384 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 15469 0x400C551: _dl_new_object (in /usr/lib/ld-2.28.so)
+  n1: 15469 0x400711B: _dl_map_object_from_fd (in /usr/lib/ld-2.28.so)
+   n2: 15469 0x4009D6A: _dl_map_object (in /usr/lib/ld-2.28.so)
+    n1: 9520 0x401423D: dl_open_worker (in /usr/lib/ld-2.28.so)
+     n1: 9520 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+      n1: 9520 0x4013DFD: _dl_open (in /usr/lib/ld-2.28.so)
+       n1: 9520 0x5900158: ??? (in /usr/lib/libdl-2.28.so)
+        n1: 9520 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+         n1: 9520 0x5872F11: _dl_catch_error (in /usr/lib/libc-2.28.so)
+          n1: 9520 0x59008BD: ??? (in /usr/lib/libdl-2.28.so)
+           n1: 9520 0x59001F8: dlopen (in /usr/lib/libdl-2.28.so)
+            n1: 9520 0x49399E2: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n2: 9520 0x493E42D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 9520 0x4948438: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+               n1: 9520 0x4916E1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                n1: 9520 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                 n1: 9520 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                  n0: 9520 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n0: 0 in 1 place, below massif's threshold (1.00%)
+    n1: 5949 0x400E484: openaux (in /usr/lib/ld-2.28.so)
+     n1: 5949 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+      n1: 5949 0x400E812: _dl_map_object_deps (in /usr/lib/ld-2.28.so)
+       n1: 5949 0x40142A2: dl_open_worker (in /usr/lib/ld-2.28.so)
+        n1: 5949 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+         n1: 5949 0x4013DFD: _dl_open (in /usr/lib/ld-2.28.so)
+          n1: 5949 0x5900158: ??? (in /usr/lib/libdl-2.28.so)
+           n1: 5949 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+            n1: 5949 0x5872F11: _dl_catch_error (in /usr/lib/libc-2.28.so)
+             n1: 5949 0x59008BD: ??? (in /usr/lib/libdl-2.28.so)
+              n1: 5949 0x59001F8: dlopen (in /usr/lib/libdl-2.28.so)
+               n1: 5949 0x49399E2: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                n2: 5949 0x493E42D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                 n1: 5949 0x4948438: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                  n1: 5949 0x4916E1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                   n1: 5949 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                    n1: 5949 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                     n0: 5949 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+                 n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 11424 0x72FE1A5: XOpenDisplay (in /usr/lib/libX11.so.6.3.0)
+  n1: 11424 0x494849F: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+   n1: 11424 0x4916E1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+    n1: 11424 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 11424 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+      n0: 11424 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 8176 0x7303515: ??? (in /usr/lib/libX11.so.6.3.0)
+  n1: 8176 0x730373A: _XrmInternalStringToQuark (in /usr/lib/libX11.so.6.3.0)
+   n1: 8176 0x731D278: _XlcGetCharSet (in /usr/lib/libX11.so.6.3.0)
+    n1: 8176 0x731CE68: _XlcAddCT (in /usr/lib/libX11.so.6.3.0)
+     n1: 8176 0x731D1AB: _XlcInitCTInfo (in /usr/lib/libX11.so.6.3.0)
+      n1: 8176 0x73235C2: ??? (in /usr/lib/libX11.so.6.3.0)
+       n1: 8176 0x7322C41: ??? (in /usr/lib/libX11.so.6.3.0)
+        n1: 8176 0x73234B6: _XlcCreateLC (in /usr/lib/libX11.so.6.3.0)
+         n1: 8176 0x73443FF: _XlcUtf8Loader (in /usr/lib/libX11.so.6.3.0)
+          n1: 8176 0x732A9F4: _XOpenLC (in /usr/lib/libX11.so.6.3.0)
+           n1: 8176 0x732AB37: _XlcCurrentLC (in /usr/lib/libX11.so.6.3.0)
+            n1: 8176 0x732AB6D: XSetLocaleModifiers (in /usr/lib/libX11.so.6.3.0)
+             n1: 8176 0x4942551: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 8176 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+               n1: 8176 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                n1: 8176 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                 n1: 8176 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                  n0: 8176 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+ n1: 5108 0x7416FE0: xcb_connect_to_fd (in /usr/lib/libxcb.so.1.1.0)
+  n1: 5108 0x741AF94: xcb_connect_to_display_with_auth_info (in /usr/lib/libxcb.so.1.1.0)
+   n1: 5108 0x730D119: _XConnectXCB (in /usr/lib/libX11.so.6.3.0)
+    n2: 5108 0x72FDB24: XOpenDisplay (in /usr/lib/libX11.so.6.3.0)
+     n1: 5108 0x494849F: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n1: 5108 0x4916E1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 5108 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 5108 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 5108 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 4680 0x72FDAEE: XOpenDisplay (in /usr/lib/libX11.so.6.3.0)
+  n1: 4680 0x494849F: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+   n1: 4680 0x4916E1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+    n1: 4680 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 4680 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+      n0: 4680 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4096 0x57AB78F: _IO_file_doallocate (in /usr/lib/libc-2.28.so)
+  n2: 4096 0x57B9BBE: _IO_doallocbuf (in /usr/lib/libc-2.28.so)
+   n1: 4096 0x57B8C03: _IO_file_underflow@@GLIBC_2.2.5 (in /usr/lib/libc-2.28.so)
+    n1: 4096 0x57B9C74: _IO_default_uflow (in /usr/lib/libc-2.28.so)
+     n1: 4096 0x57AD059: _IO_getline_info (in /usr/lib/libc-2.28.so)
+      n1: 4096 0x57AC06D: fgets (in /usr/lib/libc-2.28.so)
+       n1: 4096 0x731F7EF: ??? (in /usr/lib/libX11.so.6.3.0)
+        n1: 4096 0x731FE16: _XlcResolveLocaleName (in /usr/lib/libX11.so.6.3.0)
+         n1: 4096 0x73236D8: ??? (in /usr/lib/libX11.so.6.3.0)
+          n1: 4096 0x7322C41: ??? (in /usr/lib/libX11.so.6.3.0)
+           n1: 4096 0x73234B6: _XlcCreateLC (in /usr/lib/libX11.so.6.3.0)
+            n1: 4096 0x73443FF: _XlcUtf8Loader (in /usr/lib/libX11.so.6.3.0)
+             n1: 4096 0x732A9F4: _XOpenLC (in /usr/lib/libX11.so.6.3.0)
+              n1: 4096 0x732AB37: _XlcCurrentLC (in /usr/lib/libX11.so.6.3.0)
+               n1: 4096 0x732AB6D: XSetLocaleModifiers (in /usr/lib/libX11.so.6.3.0)
+                n1: 4096 0x4942551: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                 n1: 4096 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                  n1: 4096 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                   n1: 4096 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                    n1: 4096 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                     n0: 4096 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4096 0x730375B: _XrmInternalStringToQuark (in /usr/lib/libX11.so.6.3.0)
+  n1: 4096 0x731D278: _XlcGetCharSet (in /usr/lib/libX11.so.6.3.0)
+   n1: 4096 0x731CE68: _XlcAddCT (in /usr/lib/libX11.so.6.3.0)
+    n1: 4096 0x731D1AB: _XlcInitCTInfo (in /usr/lib/libX11.so.6.3.0)
+     n1: 4096 0x73235C2: ??? (in /usr/lib/libX11.so.6.3.0)
+      n1: 4096 0x7322C41: ??? (in /usr/lib/libX11.so.6.3.0)
+       n1: 4096 0x73234B6: _XlcCreateLC (in /usr/lib/libX11.so.6.3.0)
+        n1: 4096 0x73443FF: _XlcUtf8Loader (in /usr/lib/libX11.so.6.3.0)
+         n1: 4096 0x732A9F4: _XOpenLC (in /usr/lib/libX11.so.6.3.0)
+          n1: 4096 0x732AB37: _XlcCurrentLC (in /usr/lib/libX11.so.6.3.0)
+           n1: 4096 0x732AB6D: XSetLocaleModifiers (in /usr/lib/libX11.so.6.3.0)
+            n1: 4096 0x4942551: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 4096 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 4096 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+               n1: 4096 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                n1: 4096 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                 n0: 4096 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+ n1: 4096 0x735DD12: _XkbReadGetMapReply (in /usr/lib/libX11.so.6.3.0)
+  n1: 4096 0x735DDD9: ??? (in /usr/lib/libX11.so.6.3.0)
+   n1: 4096 0x735DE5B: XkbGetUpdatedMap (in /usr/lib/libX11.so.6.3.0)
+    n1: 4096 0x735DF1C: XkbGetMap (in /usr/lib/libX11.so.6.3.0)
+     n1: 4096 0x49422D1: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n1: 4096 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 4096 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 4096 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+         n1: 4096 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+          n0: 4096 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+ n1: 3600 0x731D4F2: _XlcCreateDefaultCharSet (in /usr/lib/libX11.so.6.3.0)
+  n1: 3600 0x731D112: _XlcAddCT (in /usr/lib/libX11.so.6.3.0)
+   n1: 3600 0x731D1AB: _XlcInitCTInfo (in /usr/lib/libX11.so.6.3.0)
+    n1: 3600 0x73235C2: ??? (in /usr/lib/libX11.so.6.3.0)
+     n1: 3600 0x7322C41: ??? (in /usr/lib/libX11.so.6.3.0)
+      n1: 3600 0x73234B6: _XlcCreateLC (in /usr/lib/libX11.so.6.3.0)
+       n1: 3600 0x73443FF: _XlcUtf8Loader (in /usr/lib/libX11.so.6.3.0)
+        n1: 3600 0x732A9F4: _XOpenLC (in /usr/lib/libX11.so.6.3.0)
+         n1: 3600 0x732AB37: _XlcCurrentLC (in /usr/lib/libX11.so.6.3.0)
+          n1: 3600 0x732AB6D: XSetLocaleModifiers (in /usr/lib/libX11.so.6.3.0)
+           n1: 3600 0x4942551: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n1: 3600 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 3600 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 3600 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+               n1: 3600 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                n0: 3600 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+ n1: 3120 0x48DC06F: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+  n0: 3120 in 6 places, all below massif's threshold (1.00%)
+ n1: 2631 0x731CE9D: _XlcAddCT (in /usr/lib/libX11.so.6.3.0)
+  n1: 2631 0x731D1AB: _XlcInitCTInfo (in /usr/lib/libX11.so.6.3.0)
+   n1: 2631 0x73235C2: ??? (in /usr/lib/libX11.so.6.3.0)
+    n1: 2631 0x7322C41: ??? (in /usr/lib/libX11.so.6.3.0)
+     n1: 2631 0x73234B6: _XlcCreateLC (in /usr/lib/libX11.so.6.3.0)
+      n1: 2631 0x73443FF: _XlcUtf8Loader (in /usr/lib/libX11.so.6.3.0)
+       n1: 2631 0x732A9F4: _XOpenLC (in /usr/lib/libX11.so.6.3.0)
+        n1: 2631 0x732AB37: _XlcCurrentLC (in /usr/lib/libX11.so.6.3.0)
+         n1: 2631 0x732AB6D: XSetLocaleModifiers (in /usr/lib/libX11.so.6.3.0)
+          n1: 2631 0x4942551: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 2631 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n1: 2631 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 2631 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 2631 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 2631 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+#-----------
+snapshot=2
+#-----------
+time=40070531
+mem_heap_B=942598
+mem_heap_extra_B=15610
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=72128354
+mem_heap_B=1208278
+mem_heap_extra_B=15626
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=97347971
+mem_heap_B=846611
+mem_heap_extra_B=18013
+mem_stacks_B=0
+heap_tree=detailed
+n12: 846611 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 472368 0x7338938: ??? (in /usr/lib/libX11.so.6.3.0)
+  n1: 472368 0x733663A: _XimLocalOpenIM (in /usr/lib/libX11.so.6.3.0)
+   n1: 472368 0x7334C36: _XimOpenIM (in /usr/lib/libX11.so.6.3.0)
+    n1: 472368 0x4942601: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 472368 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n1: 472368 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 472368 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 472368 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 472368 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+ n0: 92164 in 146 places, all below massif's threshold (1.00%)
+ n1: 72704 0x5499469: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:123)
+  n1: 72704 0x4010548: call_init.part.0 (in /usr/lib/ld-2.28.so)
+   n1: 72704 0x4010648: _dl_init (in /usr/lib/ld-2.28.so)
+    n0: 72704 0x4002038: ??? (in /usr/lib/ld-2.28.so)
+ n1: 52488 0x73384AB: ??? (in /usr/lib/libX11.so.6.3.0)
+  n1: 52488 0x733663A: _XimLocalOpenIM (in /usr/lib/libX11.so.6.3.0)
+   n1: 52488 0x7334C36: _XimOpenIM (in /usr/lib/libX11.so.6.3.0)
+    n1: 52488 0x4942601: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 52488 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n1: 52488 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 52488 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 52488 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 52488 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+ n1: 26244 0x73381E9: ??? (in /usr/lib/libX11.so.6.3.0)
+  n1: 26244 0x733663A: _XimLocalOpenIM (in /usr/lib/libX11.so.6.3.0)
+   n1: 26244 0x7334C36: _XimOpenIM (in /usr/lib/libX11.so.6.3.0)
+    n1: 26244 0x4942601: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 26244 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n1: 26244 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 26244 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 26244 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 26244 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+ n1: 26244 0x7338719: ??? (in /usr/lib/libX11.so.6.3.0)
+  n1: 26244 0x733663A: _XimLocalOpenIM (in /usr/lib/libX11.so.6.3.0)
+   n1: 26244 0x7334C36: _XimOpenIM (in /usr/lib/libX11.so.6.3.0)
+    n1: 26244 0x4942601: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 26244 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n1: 26244 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 26244 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 26244 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 26244 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+ n1: 22615 0x400C551: _dl_new_object (in /usr/lib/ld-2.28.so)
+  n1: 22615 0x400711B: _dl_map_object_from_fd (in /usr/lib/ld-2.28.so)
+   n2: 22615 0x4009D6A: _dl_map_object (in /usr/lib/ld-2.28.so)
+    n1: 11904 0x400E484: openaux (in /usr/lib/ld-2.28.so)
+     n1: 11904 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+      n1: 11904 0x400E812: _dl_map_object_deps (in /usr/lib/ld-2.28.so)
+       n1: 11904 0x40142A2: dl_open_worker (in /usr/lib/ld-2.28.so)
+        n1: 11904 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+         n1: 11904 0x4013DFD: _dl_open (in /usr/lib/ld-2.28.so)
+          n1: 11904 0x5900158: ??? (in /usr/lib/libdl-2.28.so)
+           n1: 11904 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+            n1: 11904 0x5872F11: _dl_catch_error (in /usr/lib/libc-2.28.so)
+             n1: 11904 0x59008BD: ??? (in /usr/lib/libdl-2.28.so)
+              n1: 11904 0x59001F8: dlopen (in /usr/lib/libdl-2.28.so)
+               n1: 11904 0x49399E2: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                n0: 11904 in 2 places, all below massif's threshold (1.00%)
+    n1: 10711 0x401423D: dl_open_worker (in /usr/lib/ld-2.28.so)
+     n1: 10711 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+      n1: 10711 0x4013DFD: _dl_open (in /usr/lib/ld-2.28.so)
+       n1: 10711 0x5900158: ??? (in /usr/lib/libdl-2.28.so)
+        n1: 10711 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+         n1: 10711 0x5872F11: _dl_catch_error (in /usr/lib/libc-2.28.so)
+          n1: 10711 0x59008BD: ??? (in /usr/lib/libdl-2.28.so)
+           n1: 10711 0x59001F8: dlopen (in /usr/lib/libdl-2.28.so)
+            n2: 10711 0x49399E2: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n2: 9520 0x493E42D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 9520 0x4948438: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+               n1: 9520 0x4916E1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                n1: 9520 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                 n1: 9520 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                  n0: 9520 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n0: 0 in 1 place, below massif's threshold (1.00%)
+             n0: 1191 in 1 place, below massif's threshold (1.00%)
+ n1: 21152 0x7416DE0: xcb_connect_to_fd (in /usr/lib/libxcb.so.1.1.0)
+  n1: 21152 0x741AF94: xcb_connect_to_display_with_auth_info (in /usr/lib/libxcb.so.1.1.0)
+   n1: 21152 0x730D119: _XConnectXCB (in /usr/lib/libX11.so.6.3.0)
+    n2: 21152 0x72FDB24: XOpenDisplay (in /usr/lib/libX11.so.6.3.0)
+     n1: 21152 0x494849F: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n1: 21152 0x4916E1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 21152 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 21152 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 21152 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 16472 0x63722F0: g_malloc (in /usr/lib/libglib-2.0.so.0.5800.0)
+  n1: 16384 0x6367EF4: ??? (in /usr/lib/libglib-2.0.so.0.5800.0)
+   n1: 16384 0x4010548: call_init.part.0 (in /usr/lib/ld-2.28.so)
+    n1: 16384 0x4010648: _dl_init (in /usr/lib/ld-2.28.so)
+     n0: 16384 0x4002038: ??? (in /usr/lib/ld-2.28.so)
+  n0: 88 in 1 place, below massif's threshold (1.00%)
+ n2: 16384 0x72FDE28: XOpenDisplay (in /usr/lib/libX11.so.6.3.0)
+  n1: 16384 0x494849F: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+   n1: 16384 0x4916E1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+    n1: 16384 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 16384 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+      n0: 16384 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 16352 0x7303515: ??? (in /usr/lib/libX11.so.6.3.0)
+  n0: 16352 in 2 places, all below massif's threshold (1.00%)
+ n2: 11424 0x72FE1A5: XOpenDisplay (in /usr/lib/libX11.so.6.3.0)
+  n1: 11424 0x494849F: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+   n1: 11424 0x4916E1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+    n1: 11424 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 11424 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+      n0: 11424 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=137162978
+mem_heap_B=2887877
+mem_heap_extra_B=26611
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=169772002
+mem_heap_B=3151864
+mem_heap_extra_B=70960
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=198277245
+mem_heap_B=6910675
+mem_heap_extra_B=93397
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=229081430
+mem_heap_B=7998646
+mem_heap_extra_B=93770
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=483160278
+mem_heap_B=9768600
+mem_heap_extra_B=93896
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=519739157
+mem_heap_B=9730557
+mem_heap_extra_B=94115
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=749710566
+mem_heap_B=9732821
+mem_heap_extra_B=94243
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=786647491
+mem_heap_B=10042998
+mem_heap_extra_B=95042
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=1040983095
+mem_heap_B=11959601
+mem_heap_extra_B=94935
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=1074296058
+mem_heap_B=15727482
+mem_heap_extra_B=94878
+mem_stacks_B=0
+heap_tree=detailed
+n5: 15727482 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 6056734 0x9AD4E47: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+  n2: 5151050 0xB5AF9F5: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 5148844 0xB5A1B53: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 5148844 0xB662894: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 5148844 0xB663DE8: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 5148844 0xB33979D: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+       n1: 5148844 0xB340F71: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+        n1: 5148844 0xB348554: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+         n1: 5148844 0xB348EF1: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+          n1: 5148844 0x48BCF22: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n2: 5148844 0x48B80B9: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 5148844 0x48B83A5: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n7: 4966241 0x10C2BE: Body::create(SDL_Renderer*, char*) (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x10C649: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n1: 1920023 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+                n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x10DE1E: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD68: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD7A: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD8C: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD9E: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DDB0: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+             n1: 182603 0x10C57F: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 182603 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 182603 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 2206 in 2 places, all below massif's threshold (1.00%)
+  n1: 409600 0xB231CE8: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 409600 0xB294433: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 409600 0xB5C4AA7: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 409600 0xB5A1AC4: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 409600 0x9A7D307: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 409600 0x9AAAD25: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 409600 0x9AAE348: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+         n2: 409600 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+          n1: 409600 0x49478C8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n2: 409600 0x49155CE: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 409600 0x48BB84C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 409600 0x48B5D4E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 409600 0x10FB6E: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 409600 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 262132 0x9AAE38D: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+   n2: 262132 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+    n1: 262132 0x49478C8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n2: 262132 0x49155CE: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n2: 262132 0x48BB84C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 262132 0x48B5D4E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 262132 0x10FB6E: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 262132 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 233952 in 142 places, all below massif's threshold (1.00%)
+ n3: 5836039 0x48DC031: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+  n3: 3840000 0x49100F8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+   n1: 1920000 0x4910380: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+    n2: 1920000 0x48B8491: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n2: 1920000 0x10C2BE: Body::create(SDL_Renderer*, char*) (in /home/bogdan/space_invaders_2015/original/iesire)
+      n1: 1920000 0x10C649: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+       n1: 1920000 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+        n0: 1920000 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+      n0: 0 in 6 places, all below massif's threshold (1.00%)
+     n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 1920000 0x51E69E2: IMG_LoadPNG_RW (in /usr/lib/libSDL2_image-2.0.so.0.2.1)
+    n1: 1920000 0x51DDC34: IMG_LoadTyped_RW (in /usr/lib/libSDL2_image-2.0.so.0.2.1)
+     n2: 1920000 0x10C2B0: Body::create(SDL_Renderer*, char*) (in /home/bogdan/space_invaders_2015/original/iesire)
+      n1: 1920000 0x10C649: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+       n1: 1920000 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+        n0: 1920000 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+      n0: 0 in 6 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 1920000 0x4912414: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+   n1: 1920000 0x4913948: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+    n1: 1920000 0x10FB34: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+     n0: 1920000 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n0: 76039 in 30 places, all below massif's threshold (1.00%)
+ n4: 2351864 0x9AD52B0: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+  n1: 762168 0xB6DF83A: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 762168 0xB5D1B2C: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 762168 0xB5C1627: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 762168 0xB5A4EAA: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 762168 0x9A7C57E: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 762168 0x9A7C72A: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 762168 0x9AAF947: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+         n1: 762168 0x49471CA: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+          n1: 762168 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 762168 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n1: 762168 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 762168 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 762168 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 762168 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n1: 662928 0x9A7D73D: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+   n1: 662928 0xB5A8328: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 662928 0x9A7D830: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+     n1: 662928 0x9AAAEDD: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+      n1: 662928 0x9AAE348: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 662928 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 662928 0x49471AF: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+         n1: 662928 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+          n1: 662928 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 662928 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n1: 662928 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 662928 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+              n0: 662928 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n0: 647733 in 69 places, all below massif's threshold (1.00%)
+  n2: 279035 0xB5AFA5F: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 260287 0xB29A28F: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 260287 0x9AAAB0B: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+     n1: 260287 0x9AB1ADC: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+      n1: 260287 0x9AB261C: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 260287 0x4010508: call_init.part.0 (in /usr/lib/ld-2.28.so)
+        n1: 260287 0x4010648: _dl_init (in /usr/lib/ld-2.28.so)
+         n1: 260287 0x4014531: dl_open_worker (in /usr/lib/ld-2.28.so)
+          n1: 260287 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+           n1: 260287 0x4013DFD: _dl_open (in /usr/lib/ld-2.28.so)
+            n1: 260287 0x5900158: ??? (in /usr/lib/libdl-2.28.so)
+             n1: 260287 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+              n1: 260287 0x5872F11: _dl_catch_error (in /usr/lib/libc-2.28.so)
+               n1: 260287 0x59008BD: ??? (in /usr/lib/libdl-2.28.so)
+                n1: 260287 0x59001F8: dlopen (in /usr/lib/libdl-2.28.so)
+                 n1: 260287 0x4946F1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                  n1: 260287 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                   n1: 260287 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                    n1: 260287 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                     n1: 260287 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                      n1: 260287 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                       n0: 260287 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+   n0: 18748 in 13 places, all below massif's threshold (1.00%)
+ n0: 1010477 in 381 places, all below massif's threshold (1.00%)
+ n1: 472368 0x7338938: ??? (in /usr/lib/libX11.so.6.3.0)
+  n1: 472368 0x733663A: _XimLocalOpenIM (in /usr/lib/libX11.so.6.3.0)
+   n1: 472368 0x7334C36: _XimOpenIM (in /usr/lib/libX11.so.6.3.0)
+    n1: 472368 0x4942601: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 472368 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n1: 472368 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 472368 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 472368 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 472368 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+#-----------
+snapshot=15
+#-----------
+time=1249125545
+mem_heap_B=11888242
+mem_heap_extra_B=94902
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=1270023513
+mem_heap_B=11923226
+mem_heap_extra_B=95238
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=1300750437
+mem_heap_B=11931806
+mem_heap_extra_B=95250
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=1325497921
+mem_heap_B=11955114
+mem_heap_extra_B=95318
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=1355902559
+mem_heap_B=12294153
+mem_heap_extra_B=101319
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=1373023933
+mem_heap_B=14253598
+mem_heap_extra_B=95530
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=1625557391
+mem_heap_B=14299336
+mem_heap_extra_B=95536
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=1658870331
+mem_heap_B=18067217
+mem_heap_extra_B=95479
+mem_stacks_B=0
+heap_tree=detailed
+n5: 18067217 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 8017200 0x9AD4E47: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+  n2: 7111452 0xB5AF9F5: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 7068867 0xB5A1B53: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 7068867 0xB662894: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 7068867 0xB663DE8: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 7068867 0xB33979D: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+       n1: 7068867 0xB340F71: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+        n1: 7068867 0xB348554: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+         n1: 7068867 0xB348EF1: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+          n1: 7068867 0x48BCF22: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n2: 7068867 0x48B80B9: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 7068867 0x48B83A5: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n8: 6886264 0x10C2BE: Body::create(SDL_Renderer*, char*) (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x10C649: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n1: 1920023 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+                n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x10DE1E: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x110887: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n1: 1920023 0x10C9F6: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+                n1: 1920023 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+                 n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD68: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD7A: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD8C: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD9E: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DDB0: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+             n1: 182603 0x10C57F: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 182603 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 182603 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 42585 in 3 places, all below massif's threshold (1.00%)
+  n1: 409600 0xB231CE8: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 409600 0xB294433: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 409600 0xB5C4AA7: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 409600 0xB5A1AC4: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 409600 0x9A7D307: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 409600 0x9AAAD25: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 409600 0x9AAE348: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+         n2: 409600 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+          n1: 409600 0x49478C8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n2: 409600 0x49155CE: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 409600 0x48BB84C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 409600 0x48B5D4E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 409600 0x10FB6E: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 409600 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 262132 0x9AAE38D: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+   n2: 262132 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+    n1: 262132 0x49478C8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n2: 262132 0x49155CE: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n2: 262132 0x48BB84C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 262132 0x48B5D4E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 262132 0x10FB6E: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 262132 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 234016 in 142 places, all below massif's threshold (1.00%)
+ n4: 6190383 0x48DC031: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+  n3: 3840000 0x49100F8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+   n1: 1920000 0x4910380: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+    n2: 1920000 0x48B8491: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n2: 1920000 0x10C2BE: Body::create(SDL_Renderer*, char*) (in /home/bogdan/space_invaders_2015/original/iesire)
+      n1: 1920000 0x110887: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+       n1: 1920000 0x10C9F6: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+        n1: 1920000 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 1920000 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+      n0: 0 in 7 places, all below massif's threshold (1.00%)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+   n1: 1920000 0x51E69E2: IMG_LoadPNG_RW (in /usr/lib/libSDL2_image-2.0.so.0.2.1)
+    n1: 1920000 0x51DDC34: IMG_LoadTyped_RW (in /usr/lib/libSDL2_image-2.0.so.0.2.1)
+     n2: 1920000 0x10C2B0: Body::create(SDL_Renderer*, char*) (in /home/bogdan/space_invaders_2015/original/iesire)
+      n1: 1920000 0x110887: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+       n1: 1920000 0x10C9F6: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+        n1: 1920000 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 1920000 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+      n0: 0 in 7 places, all below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 1920000 0x4912414: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+   n1: 1920000 0x4913948: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+    n1: 1920000 0x10FB34: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+     n0: 1920000 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n1: 348560 0x4BB8507: Mix_LoadWAV_RW (in /usr/lib/libSDL2_mixer-2.0.so.0.2.0)
+   n1: 348560 0x110858: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+    n1: 348560 0x10C9F6: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+     n1: 348560 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+      n0: 348560 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n0: 81823 in 33 places, all below massif's threshold (1.00%)
+ n4: 2359796 0x9AD52B0: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+  n1: 762168 0xB6DF83A: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 762168 0xB5D1B2C: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 762168 0xB5C1627: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 762168 0xB5A4EAA: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 762168 0x9A7C57E: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 762168 0x9A7C72A: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 762168 0x9AAF947: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+         n1: 762168 0x49471CA: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+          n1: 762168 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 762168 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n1: 762168 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 762168 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 762168 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 762168 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n1: 662928 0x9A7D73D: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+   n1: 662928 0xB5A8328: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 662928 0x9A7D830: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+     n1: 662928 0x9AAAEDD: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+      n1: 662928 0x9AAE348: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 662928 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 662928 0x49471AF: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+         n1: 662928 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+          n1: 662928 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 662928 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n1: 662928 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 662928 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+              n0: 662928 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n0: 655665 in 69 places, all below massif's threshold (1.00%)
+  n2: 279035 0xB5AFA5F: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 260287 0xB29A28F: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 260287 0x9AAAB0B: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+     n1: 260287 0x9AB1ADC: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+      n1: 260287 0x9AB261C: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 260287 0x4010508: call_init.part.0 (in /usr/lib/ld-2.28.so)
+        n1: 260287 0x4010648: _dl_init (in /usr/lib/ld-2.28.so)
+         n1: 260287 0x4014531: dl_open_worker (in /usr/lib/ld-2.28.so)
+          n1: 260287 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+           n1: 260287 0x4013DFD: _dl_open (in /usr/lib/ld-2.28.so)
+            n1: 260287 0x5900158: ??? (in /usr/lib/libdl-2.28.so)
+             n1: 260287 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+              n1: 260287 0x5872F11: _dl_catch_error (in /usr/lib/libc-2.28.so)
+               n1: 260287 0x59008BD: ??? (in /usr/lib/libdl-2.28.so)
+                n1: 260287 0x59001F8: dlopen (in /usr/lib/libdl-2.28.so)
+                 n1: 260287 0x4946F1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                  n1: 260287 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                   n1: 260287 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                    n1: 260287 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                     n1: 260287 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                      n1: 260287 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                       n0: 260287 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+   n0: 18748 in 13 places, all below massif's threshold (1.00%)
+ n0: 1027470 in 382 places, all below massif's threshold (1.00%)
+ n1: 472368 0x7338938: ??? (in /usr/lib/libX11.so.6.3.0)
+  n1: 472368 0x733663A: _XimLocalOpenIM (in /usr/lib/libX11.so.6.3.0)
+   n1: 472368 0x7334C36: _XimOpenIM (in /usr/lib/libX11.so.6.3.0)
+    n1: 472368 0x4942601: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 472368 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n1: 472368 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 472368 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 472368 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 472368 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+#-----------
+snapshot=23
+#-----------
+time=1695747875
+mem_heap_B=14352076
+mem_heap_extra_B=97108
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=1723565100
+mem_heap_B=14354368
+mem_heap_extra_B=97200
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=1749668289
+mem_heap_B=14355300
+mem_heap_extra_B=97236
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=1784371715
+mem_heap_B=14355788
+mem_heap_extra_B=97244
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=1814620883
+mem_heap_B=14434613
+mem_heap_extra_B=97995
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=1833982155
+mem_heap_B=14434801
+mem_heap_extra_B=98007
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1872170070
+mem_heap_B=14515730
+mem_heap_extra_B=98806
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=1898142014
+mem_heap_B=14516106
+mem_heap_extra_B=98830
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=1934803511
+mem_heap_B=14597379
+mem_heap_extra_B=99637
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1974162012
+mem_heap_B=14596063
+mem_heap_extra_B=99553
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=2012720261
+mem_heap_B=14757481
+mem_heap_extra_B=101207
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=2036306895
+mem_heap_B=14757857
+mem_heap_extra_B=101231
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=2059450916
+mem_heap_B=14758045
+mem_heap_extra_B=101243
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=2080272901
+mem_heap_B=14758453
+mem_heap_extra_B=101267
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=2113426031
+mem_heap_B=14837738
+mem_heap_extra_B=101974
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=2133691553
+mem_heap_B=14838194
+mem_heap_extra_B=102022
+mem_stacks_B=0
+heap_tree=detailed
+n5: 14838194 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 8107184 0x9AD4E47: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+  n2: 7201500 0xB5AF9F5: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 7068867 0xB5A1B53: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 7068867 0xB662894: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 7068867 0xB663DE8: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 7068867 0xB33979D: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+       n1: 7068867 0xB340F71: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+        n1: 7068867 0xB348554: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+         n1: 7068867 0xB348EF1: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+          n1: 7068867 0x48BCF22: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n2: 7068867 0x48B80B9: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 7068867 0x48B83A5: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n8: 6886264 0x10C2BE: Body::create(SDL_Renderer*, char*) (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x10C649: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n1: 1920023 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+                n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x10DE1E: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x110887: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n1: 1920023 0x10C9F6: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+                n1: 1920023 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+                 n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD68: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD7A: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD8C: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD9E: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DDB0: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+             n1: 182603 0x10C57F: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 182603 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 182603 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 132633 in 3 places, all below massif's threshold (1.00%)
+  n1: 409600 0xB231CE8: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 409600 0xB294433: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 409600 0xB5C4AA7: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 409600 0xB5A1AC4: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 409600 0x9A7D307: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 409600 0x9AAAD25: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 409600 0x9AAE348: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+         n2: 409600 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+          n1: 409600 0x49478C8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n2: 409600 0x49155CE: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 409600 0x48BB84C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 409600 0x48B5D4E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 409600 0x10FB6E: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 409600 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 262132 0x9AAE38D: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+   n2: 262132 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+    n1: 262132 0x49478C8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n2: 262132 0x49155CE: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n2: 262132 0x48BB84C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 262132 0x48B5D4E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 262132 0x10FB6E: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 262132 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 233952 in 142 places, all below massif's threshold (1.00%)
+ n4: 2604747 0x48DC031: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+  n1: 1920000 0x4912414: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+   n1: 1920000 0x4913948: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+    n1: 1920000 0x10FB34: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+     n0: 1920000 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n1: 348560 0x4BB8507: Mix_LoadWAV_RW (in /usr/lib/libSDL2_mixer-2.0.so.0.2.0)
+   n1: 348560 0x110858: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+    n1: 348560 0x10C9F6: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+     n1: 348560 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+      n0: 348560 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n2: 247936 0x4DD0D8E: TTF_OpenFontIndexRW (in /usr/lib/libSDL2_ttf-2.0.so.0.14.0)
+   n2: 216944 0x111E26: afisare_status(int, int, SDL_Renderer*) (in /home/bogdan/space_invaders_2015/original/iesire)
+    n1: 185952 0x1112DF: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+     n1: 185952 0x10C9F6: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+      n1: 185952 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+       n0: 185952 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+    n0: 30992 in 1 place, below massif's threshold (1.00%)
+   n0: 30992 in 2 places, all below massif's threshold (1.00%)
+  n0: 88251 in 33 places, all below massif's threshold (1.00%)
+ n5: 2396832 0x9AD52B0: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+  n1: 762168 0xB6DF83A: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 762168 0xB5D1B2C: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 762168 0xB5C1627: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 762168 0xB5A4EAA: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 762168 0x9A7C57E: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 762168 0x9A7C72A: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 762168 0x9AAF947: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+         n1: 762168 0x49471CA: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+          n1: 762168 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 762168 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n1: 762168 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 762168 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 762168 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 762168 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n1: 662928 0x9A7D73D: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+   n1: 662928 0xB5A8328: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 662928 0x9A7D830: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+     n1: 662928 0x9AAAEDD: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+      n1: 662928 0x9AAE348: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 662928 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 662928 0x49471AF: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+         n1: 662928 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+          n1: 662928 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 662928 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n1: 662928 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 662928 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+              n0: 662928 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n0: 536317 in 68 places, all below massif's threshold (1.00%)
+  n2: 279035 0xB5AFA5F: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 260287 0xB29A28F: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 260287 0x9AAAB0B: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+     n1: 260287 0x9AB1ADC: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+      n1: 260287 0x9AB261C: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 260287 0x4010508: call_init.part.0 (in /usr/lib/ld-2.28.so)
+        n1: 260287 0x4010648: _dl_init (in /usr/lib/ld-2.28.so)
+         n1: 260287 0x4014531: dl_open_worker (in /usr/lib/ld-2.28.so)
+          n1: 260287 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+           n1: 260287 0x4013DFD: _dl_open (in /usr/lib/ld-2.28.so)
+            n1: 260287 0x5900158: ??? (in /usr/lib/libdl-2.28.so)
+             n1: 260287 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+              n1: 260287 0x5872F11: _dl_catch_error (in /usr/lib/libc-2.28.so)
+               n1: 260287 0x59008BD: ??? (in /usr/lib/libdl-2.28.so)
+                n1: 260287 0x59001F8: dlopen (in /usr/lib/libdl-2.28.so)
+                 n1: 260287 0x4946F1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                  n1: 260287 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                   n1: 260287 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                    n1: 260287 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                     n1: 260287 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                      n1: 260287 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                       n0: 260287 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+   n0: 18748 in 13 places, all below massif's threshold (1.00%)
+  n1: 156384 0xB4E0796: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 156384 0xB293ACB: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 156384 0xB5BF823: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 156384 0xB5C19A9: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 156384 0xB5A4EAA: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+       n1: 156384 0x9A7C57E: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 156384 0x9A7C72A: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+         n2: 156384 0x9AAF947: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+          n1: 156384 0x4947748: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 156384 0x4947B16: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 156384 0x49155CE: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n2: 156384 0x48BB84C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 156384 0x48B5D4E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+               n1: 156384 0x10FB6E: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                n0: 156384 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n0: 0 in 1 place, below massif's threshold (1.00%)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 1257063 in 403 places, all below massif's threshold (1.00%)
+ n1: 472368 0x7338938: ??? (in /usr/lib/libX11.so.6.3.0)
+  n1: 472368 0x733663A: _XimLocalOpenIM (in /usr/lib/libX11.so.6.3.0)
+   n1: 472368 0x7334C36: _XimOpenIM (in /usr/lib/libX11.so.6.3.0)
+    n1: 472368 0x4942601: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 472368 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n1: 472368 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 472368 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 472368 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 472368 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+#-----------
+snapshot=39
+#-----------
+time=2157549355
+mem_heap_B=14999124
+mem_heap_extra_B=103564
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=2174028462
+mem_heap_B=14999312
+mem_heap_extra_B=103576
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=2202977665
+mem_heap_B=14999688
+mem_heap_extra_B=103600
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=2228715826
+mem_heap_B=15080569
+mem_heap_extra_B=104415
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=2267033855
+mem_heap_B=15079221
+mem_heap_extra_B=104331
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=2293363443
+mem_heap_B=15162494
+mem_heap_extra_B=105146
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2310343273
+mem_heap_B=15162682
+mem_heap_extra_B=105158
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=2341171155
+mem_heap_B=15163026
+mem_heap_extra_B=105182
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=2362773369
+mem_heap_B=15328816
+mem_heap_extra_B=106768
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2394047343
+mem_heap_B=15327388
+mem_heap_extra_B=106684
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=2432520479
+mem_heap_B=15411225
+mem_heap_extra_B=107511
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2449992418
+mem_heap_B=15411413
+mem_heap_extra_B=107523
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=2466514324
+mem_heap_B=15411601
+mem_heap_extra_B=107535
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=2482996169
+mem_heap_B=15479417
+mem_heap_extra_B=108223
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=2508228668
+mem_heap_B=15577707
+mem_heap_extra_B=109141
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=2525109089
+mem_heap_B=15577895
+mem_heap_extra_B=109153
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=2541775556
+mem_heap_B=15576579
+mem_heap_extra_B=109069
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=2559123916
+mem_heap_B=15635805
+mem_heap_extra_B=109603
+mem_stacks_B=0
+heap_tree=detailed
+n6: 15635805 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 8204831 0x9AD4E47: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+  n3: 7299147 0xB5AF9F5: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 7068867 0xB5A1B53: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 7068867 0xB662894: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 7068867 0xB663DE8: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 7068867 0xB33979D: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+       n1: 7068867 0xB340F71: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+        n1: 7068867 0xB348554: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+         n1: 7068867 0xB348EF1: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+          n1: 7068867 0x48BCF22: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n2: 7068867 0x48B80B9: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 7068867 0x48B83A5: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n8: 6886264 0x10C2BE: Body::create(SDL_Renderer*, char*) (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x10C649: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n1: 1920023 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+                n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x10DE1E: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x110887: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n1: 1920023 0x10C9F6: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+                n1: 1920023 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+                 n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD68: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD7A: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD8C: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD9E: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DDB0: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+             n1: 182603 0x10C57F: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 182603 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 182603 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 228074 0xB292CFF: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 228074 0xB662894: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 228074 0xB663DE8: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 228074 0xB33979D: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+       n1: 228074 0xB340F71: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+        n1: 228074 0xB348554: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+         n1: 228074 0xB348EF1: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+          n1: 228074 0x48BCF22: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 228074 0x48B80B9: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 228074 0x48B83A5: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 166016 0x111EAA: afisare_status(int, int, SDL_Renderer*) (in /home/bogdan/space_invaders_2015/original/iesire)
+              n0: 166016 in 2 places, all below massif's threshold (1.00%)
+             n0: 62058 in 2 places, all below massif's threshold (1.00%)
+   n0: 2206 in 2 places, all below massif's threshold (1.00%)
+  n1: 409600 0xB231CE8: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 409600 0xB294433: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 409600 0xB5C4AA7: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 409600 0xB5A1AC4: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 409600 0x9A7D307: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 409600 0x9AAAD25: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 409600 0x9AAE348: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+         n2: 409600 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+          n1: 409600 0x49478C8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n2: 409600 0x49155CE: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 409600 0x48BB84C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 409600 0x48B5D4E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 409600 0x10FB6E: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 409600 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 262132 0x9AAE38D: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+   n2: 262132 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+    n1: 262132 0x49478C8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n2: 262132 0x49155CE: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n2: 262132 0x48BB84C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 262132 0x48B5D4E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 262132 0x10FB6E: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 262132 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 233952 in 142 places, all below massif's threshold (1.00%)
+ n4: 2963999 0x48DC031: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+  n1: 1920000 0x4912414: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+   n1: 1920000 0x4913948: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+    n1: 1920000 0x10FB34: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+     n0: 1920000 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n2: 557856 0x4DD0D8E: TTF_OpenFontIndexRW (in /usr/lib/libSDL2_ttf-2.0.so.0.14.0)
+   n2: 526864 0x111E26: afisare_status(int, int, SDL_Renderer*) (in /home/bogdan/space_invaders_2015/original/iesire)
+    n1: 495872 0x1112DF: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+     n1: 495872 0x10C9F6: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+      n1: 495872 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+       n0: 495872 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+    n0: 30992 in 1 place, below massif's threshold (1.00%)
+   n0: 30992 in 2 places, all below massif's threshold (1.00%)
+  n1: 348560 0x4BB8507: Mix_LoadWAV_RW (in /usr/lib/libSDL2_mixer-2.0.so.0.2.0)
+   n1: 348560 0x110858: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+    n1: 348560 0x10C9F6: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+     n1: 348560 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+      n0: 348560 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n0: 137583 in 33 places, all below massif's threshold (1.00%)
+ n4: 2423904 0x9AD52B0: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+  n1: 762168 0xB6DF83A: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 762168 0xB5D1B2C: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 762168 0xB5C1627: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 762168 0xB5A4EAA: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 762168 0x9A7C57E: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 762168 0x9A7C72A: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 762168 0x9AAF947: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+         n1: 762168 0x49471CA: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+          n1: 762168 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 762168 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n1: 762168 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 762168 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 762168 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 762168 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n0: 719773 in 69 places, all below massif's threshold (1.00%)
+  n1: 662928 0x9A7D73D: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+   n1: 662928 0xB5A8328: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 662928 0x9A7D830: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+     n1: 662928 0x9AAAEDD: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+      n1: 662928 0x9AAE348: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 662928 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 662928 0x49471AF: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+         n1: 662928 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+          n1: 662928 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 662928 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n1: 662928 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 662928 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+              n0: 662928 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n2: 279035 0xB5AFA5F: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 260287 0xB29A28F: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 260287 0x9AAAB0B: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+     n1: 260287 0x9AB1ADC: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+      n1: 260287 0x9AB261C: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 260287 0x4010508: call_init.part.0 (in /usr/lib/ld-2.28.so)
+        n1: 260287 0x4010648: _dl_init (in /usr/lib/ld-2.28.so)
+         n1: 260287 0x4014531: dl_open_worker (in /usr/lib/ld-2.28.so)
+          n1: 260287 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+           n1: 260287 0x4013DFD: _dl_open (in /usr/lib/ld-2.28.so)
+            n1: 260287 0x5900158: ??? (in /usr/lib/libdl-2.28.so)
+             n1: 260287 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+              n1: 260287 0x5872F11: _dl_catch_error (in /usr/lib/libc-2.28.so)
+               n1: 260287 0x59008BD: ??? (in /usr/lib/libdl-2.28.so)
+                n1: 260287 0x59001F8: dlopen (in /usr/lib/libdl-2.28.so)
+                 n1: 260287 0x4946F1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                  n1: 260287 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                   n1: 260287 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                    n1: 260287 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                     n1: 260287 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                      n1: 260287 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                       n0: 260287 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+   n0: 18748 in 13 places, all below massif's threshold (1.00%)
+ n0: 1284569 in 402 places, all below massif's threshold (1.00%)
+ n1: 472368 0x7338938: ??? (in /usr/lib/libX11.so.6.3.0)
+  n1: 472368 0x733663A: _XimLocalOpenIM (in /usr/lib/libX11.so.6.3.0)
+   n1: 472368 0x7334C36: _XimOpenIM (in /usr/lib/libX11.so.6.3.0)
+    n1: 472368 0x4942601: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 472368 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n1: 472368 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 472368 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 472368 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 472368 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+ n1: 286134 0x5946F0A: ??? (in /usr/lib/libfreetype.so.6.16.1)
+  n1: 286134 0x5946FD8: ??? (in /usr/lib/libfreetype.so.6.16.1)
+   n0: 286134 in 20 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=2620328896
+mem_heap_B=15778519
+mem_heap_extra_B=110721
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=2677340993
+mem_heap_B=11242505
+mem_heap_extra_B=110695
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=2695035425
+mem_heap_B=11242505
+mem_heap_extra_B=110695
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=2711516269
+mem_heap_B=11242505
+mem_heap_extra_B=110695
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=2728368575
+mem_heap_B=11242505
+mem_heap_extra_B=110695
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=2744984335
+mem_heap_B=11242505
+mem_heap_extra_B=110695
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=2761510484
+mem_heap_B=11242505
+mem_heap_extra_B=110695
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=2788207915
+mem_heap_B=11242473
+mem_heap_extra_B=110695
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=3052647546
+mem_heap_B=15306633
+mem_heap_extra_B=113015
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=3085960808
+mem_heap_B=19074514
+mem_heap_extra_B=112974
+mem_stacks_B=0
+heap_tree=peak
+n6: 19074514 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 8046744 0x9AD4E47: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+  n2: 7140456 0xB5AF9F5: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 6960843 0xB5A1B53: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 6960843 0xB662894: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 6960843 0xB663DE8: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 6960843 0xB33979D: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+       n1: 6960843 0xB340F71: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+        n1: 6960843 0xB348554: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+         n1: 6960843 0xB348EF1: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+          n1: 6960843 0x48BCF22: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n3: 6960843 0x48B80B9: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 5040820 0x48B83A5: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n8: 4966241 0x10C2BE: Body::create(SDL_Renderer*, char*) (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x10DE1E: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x10F661: rankings(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n1: 1920023 0x10E1B3: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+                n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD68: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD7A: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD8C: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD9E: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DDB0: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n0: 0 in 2 places, all below massif's threshold (1.00%)
+             n0: 74579 in 2 places, all below massif's threshold (1.00%)
+            n1: 1920023 0x48B7FC7: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 1920023 0x10F63F: rankings(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x10E1B3: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 179613 in 3 places, all below massif's threshold (1.00%)
+  n1: 409600 0xB231CE8: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 409600 0xB294433: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 409600 0xB5C4AA7: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 409600 0xB5A1AC4: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 409600 0x9A7D307: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 409600 0x9AAAD25: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 409600 0x9AAE348: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+         n2: 409600 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+          n1: 409600 0x49478C8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n2: 409600 0x49155CE: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 409600 0x48BB84C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 409600 0x48B5D4E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 409600 0x10FB6E: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 409600 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 262132 0x9AAE38D: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+   n2: 262132 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+    n1: 262132 0x49478C8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n2: 262132 0x49155CE: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n2: 262132 0x48BB84C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 262132 0x48B5D4E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 262132 0x10FB6E: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 262132 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 234556 in 144 places, all below massif's threshold (1.00%)
+ n4: 6515987 0x48DC031: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+  n3: 3894404 0x49100F8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+   n1: 1920000 0x4910380: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+    n2: 1920000 0x48B8491: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n2: 1920000 0x10C2BE: Body::create(SDL_Renderer*, char*) (in /home/bogdan/space_invaders_2015/original/iesire)
+      n1: 1920000 0x10F661: rankings(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+       n1: 1920000 0x10E1B3: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+        n0: 1920000 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+      n0: 0 in 13 places, all below massif's threshold (1.00%)
+     n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n1: 1920000 0x51E69E2: IMG_LoadPNG_RW (in /usr/lib/libSDL2_image-2.0.so.0.2.1)
+    n1: 1920000 0x51DDC34: IMG_LoadTyped_RW (in /usr/lib/libSDL2_image-2.0.so.0.2.1)
+     n2: 1920000 0x10C2B0: Body::create(SDL_Renderer*, char*) (in /home/bogdan/space_invaders_2015/original/iesire)
+      n1: 1920000 0x10F661: rankings(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+       n1: 1920000 0x10E1B3: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+        n0: 1920000 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+      n0: 0 in 13 places, all below massif's threshold (1.00%)
+   n0: 54404 in 1 place, below massif's threshold (1.00%)
+  n1: 1920000 0x4912414: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+   n1: 1920000 0x4913948: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+    n1: 1920000 0x10FB34: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+     n0: 1920000 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n2: 588848 0x4DD0D8E: TTF_OpenFontIndexRW (in /usr/lib/libSDL2_ttf-2.0.so.0.14.0)
+   n2: 557856 0x111E26: afisare_status(int, int, SDL_Renderer*) (in /home/bogdan/space_invaders_2015/original/iesire)
+    n1: 495872 0x1112DF: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+     n1: 495872 0x10C9F6: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+      n1: 495872 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+       n0: 495872 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+    n0: 61984 in 2 places, all below massif's threshold (1.00%)
+   n0: 30992 in 4 places, all below massif's threshold (1.00%)
+  n0: 112735 in 34 places, all below massif's threshold (1.00%)
+ n4: 2419601 0x9AD52B0: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+  n1: 762168 0xB6DF83A: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 762168 0xB5D1B2C: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 762168 0xB5C1627: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 762168 0xB5A4EAA: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 762168 0x9A7C57E: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 762168 0x9A7C72A: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 762168 0x9AAF947: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+         n1: 762168 0x49471CA: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+          n1: 762168 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 762168 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n1: 762168 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 762168 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 762168 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 762168 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n0: 715470 in 77 places, all below massif's threshold (1.00%)
+  n1: 662928 0x9A7D73D: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+   n1: 662928 0xB5A8328: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 662928 0x9A7D830: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+     n1: 662928 0x9AAAEDD: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+      n1: 662928 0x9AAE348: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 662928 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 662928 0x49471AF: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+         n1: 662928 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+          n1: 662928 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 662928 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n1: 662928 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 662928 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+              n0: 662928 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n2: 279035 0xB5AFA5F: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 260287 0xB29A28F: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 260287 0x9AAAB0B: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+     n1: 260287 0x9AB1ADC: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+      n1: 260287 0x9AB261C: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 260287 0x4010508: call_init.part.0 (in /usr/lib/ld-2.28.so)
+        n1: 260287 0x4010648: _dl_init (in /usr/lib/ld-2.28.so)
+         n1: 260287 0x4014531: dl_open_worker (in /usr/lib/ld-2.28.so)
+          n1: 260287 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+           n1: 260287 0x4013DFD: _dl_open (in /usr/lib/ld-2.28.so)
+            n1: 260287 0x5900158: ??? (in /usr/lib/libdl-2.28.so)
+             n1: 260287 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+              n1: 260287 0x5872F11: _dl_catch_error (in /usr/lib/libc-2.28.so)
+               n1: 260287 0x59008BD: ??? (in /usr/lib/libdl-2.28.so)
+                n1: 260287 0x59001F8: dlopen (in /usr/lib/libdl-2.28.so)
+                 n1: 260287 0x4946F1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                  n1: 260287 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                   n1: 260287 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                    n1: 260287 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                     n1: 260287 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                      n1: 260287 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                       n0: 260287 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+   n0: 18748 in 13 places, all below massif's threshold (1.00%)
+ n0: 1325738 in 402 places, all below massif's threshold (1.00%)
+ n1: 472368 0x7338938: ??? (in /usr/lib/libX11.so.6.3.0)
+  n1: 472368 0x733663A: _XimLocalOpenIM (in /usr/lib/libX11.so.6.3.0)
+   n1: 472368 0x7334C36: _XimOpenIM (in /usr/lib/libX11.so.6.3.0)
+    n1: 472368 0x4942601: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 472368 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n1: 472368 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 472368 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 472368 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 472368 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+ n1: 294076 0x5946F0A: ??? (in /usr/lib/libfreetype.so.6.16.1)
+  n1: 294076 0x5946FD8: ??? (in /usr/lib/libfreetype.so.6.16.1)
+   n0: 294076 in 20 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=67
+#-----------
+time=3114744048
+mem_heap_B=15250617
+mem_heap_extra_B=112167
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=3170774116
+mem_heap_B=15250617
+mem_heap_extra_B=112167
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=3187338276
+mem_heap_B=15250617
+mem_heap_extra_B=112167
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=3214005858
+mem_heap_B=15250617
+mem_heap_extra_B=112167
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=3298884471
+mem_heap_B=15250577
+mem_heap_extra_B=112159
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=3315561608
+mem_heap_B=13258068
+mem_heap_extra_B=111260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=3332254443
+mem_heap_B=13258068
+mem_heap_extra_B=111260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=3348862400
+mem_heap_B=13258068
+mem_heap_extra_B=111260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=3365553520
+mem_heap_B=13258068
+mem_heap_extra_B=111260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=3382128209
+mem_heap_B=13258068
+mem_heap_extra_B=111260
+mem_stacks_B=0
+heap_tree=detailed
+n6: 13258068 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 6127213 0x9AD4E47: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+  n3: 5220433 0xB5AF9F5: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 5040820 0xB5A1B53: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 5040820 0xB662894: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 5040820 0xB663DE8: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 5040820 0xB33979D: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+       n1: 5040820 0xB340F71: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+        n1: 5040820 0xB348554: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+         n1: 5040820 0xB348EF1: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+          n1: 5040820 0x48BCF22: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n3: 5040820 0x48B80B9: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 3120797 0x48B83A5: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n7: 3046218 0x10C2BE: Body::create(SDL_Renderer*, char*) (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x10DE1E: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD68: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD7A: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD8C: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DD9E: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 225239 0x10DDB0: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 225239 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n0: 0 in 3 places, all below massif's threshold (1.00%)
+             n0: 74579 in 2 places, all below massif's threshold (1.00%)
+            n1: 1920023 0x48B7FC7: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 1920023 0x10F63F: rankings(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 1920023 0x10E1B3: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 1920023 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 177407 0xB292CFF: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 177407 0xB662894: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 177407 0xB663DE8: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 177407 0xB33979D: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+       n1: 177407 0xB340F71: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+        n1: 177407 0xB348554: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+         n1: 177407 0xB348EF1: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+          n1: 177407 0x48BCF22: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 177407 0x48B80B9: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 177407 0x48B83A5: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n2: 177407 0x111EAA: afisare_status(int, int, SDL_Renderer*) (in /home/bogdan/space_invaders_2015/original/iesire)
+              n1: 167640 0x1112DF: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+               n1: 167640 0x10C9F6: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+                n1: 167640 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+                 n0: 167640 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n0: 9767 in 2 places, all below massif's threshold (1.00%)
+             n0: 0 in 3 places, all below massif's threshold (1.00%)
+   n0: 2206 in 2 places, all below massif's threshold (1.00%)
+  n1: 409600 0xB231CE8: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 409600 0xB294433: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 409600 0xB5C4AA7: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 409600 0xB5A1AC4: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 409600 0x9A7D307: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 409600 0x9AAAD25: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 409600 0x9AAE348: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+         n2: 409600 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+          n1: 409600 0x49478C8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n2: 409600 0x49155CE: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 409600 0x48BB84C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 409600 0x48B5D4E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 409600 0x10FB6E: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 409600 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 262132 0x9AAE38D: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+   n2: 262132 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+    n1: 262132 0x49478C8: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n2: 262132 0x49155CE: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n2: 262132 0x48BB84C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 262132 0x48B5D4E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 262132 0x10FB6E: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 262132 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+       n0: 0 in 1 place, below massif's threshold (1.00%)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 235048 in 144 places, all below massif's threshold (1.00%)
+ n3: 2644787 0x48DC031: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+  n1: 1920000 0x4912414: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+   n1: 1920000 0x4913948: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+    n1: 1920000 0x10FB34: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+     n0: 1920000 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n2: 557856 0x4DD0D8E: TTF_OpenFontIndexRW (in /usr/lib/libSDL2_ttf-2.0.so.0.14.0)
+   n2: 557856 0x111E26: afisare_status(int, int, SDL_Renderer*) (in /home/bogdan/space_invaders_2015/original/iesire)
+    n1: 495872 0x1112DF: stage1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+     n1: 495872 0x10C9F6: choose_name(Screen*, int) (in /home/bogdan/space_invaders_2015/original/iesire)
+      n1: 495872 0x10E241: menu1(Screen*) (in /home/bogdan/space_invaders_2015/original/iesire)
+       n0: 495872 0x10BCD4: main (in /home/bogdan/space_invaders_2015/original/iesire)
+    n0: 61984 in 2 places, all below massif's threshold (1.00%)
+   n0: 0 in 4 places, all below massif's threshold (1.00%)
+  n0: 166931 in 35 places, all below massif's threshold (1.00%)
+ n5: 2418409 0x9AD52B0: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+  n1: 762168 0xB6DF83A: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 762168 0xB5D1B2C: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 762168 0xB5C1627: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 762168 0xB5A4EAA: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 762168 0x9A7C57E: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 762168 0x9A7C72A: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 762168 0x9AAF947: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+         n1: 762168 0x49471CA: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+          n1: 762168 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 762168 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n1: 762168 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 762168 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 762168 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+               n0: 762168 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n1: 662928 0x9A7D73D: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+   n1: 662928 0xB5A8328: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 662928 0x9A7D830: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+     n1: 662928 0x9AAAEDD: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+      n1: 662928 0x9AAE348: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 662928 0x9AA5B3F: glXCreateContext (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 662928 0x49471AF: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+         n1: 662928 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+          n1: 662928 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 662928 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n1: 662928 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n1: 662928 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+              n0: 662928 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+  n0: 557894 in 76 places, all below massif's threshold (1.00%)
+  n2: 279035 0xB5AFA5F: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 260287 0xB29A28F: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 260287 0x9AAAB0B: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+     n1: 260287 0x9AB1ADC: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+      n1: 260287 0x9AB261C: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+       n1: 260287 0x4010508: call_init.part.0 (in /usr/lib/ld-2.28.so)
+        n1: 260287 0x4010648: _dl_init (in /usr/lib/ld-2.28.so)
+         n1: 260287 0x4014531: dl_open_worker (in /usr/lib/ld-2.28.so)
+          n1: 260287 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+           n1: 260287 0x4013DFD: _dl_open (in /usr/lib/ld-2.28.so)
+            n1: 260287 0x5900158: ??? (in /usr/lib/libdl-2.28.so)
+             n1: 260287 0x5872E75: _dl_catch_exception (in /usr/lib/libc-2.28.so)
+              n1: 260287 0x5872F11: _dl_catch_error (in /usr/lib/libc-2.28.so)
+               n1: 260287 0x59008BD: ??? (in /usr/lib/libdl-2.28.so)
+                n1: 260287 0x59001F8: dlopen (in /usr/lib/libdl-2.28.so)
+                 n1: 260287 0x4946F1D: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                  n1: 260287 0x49146D4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                   n1: 260287 0x49168F4: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                    n1: 260287 0x4917077: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                     n1: 260287 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+                      n1: 260287 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                       n0: 260287 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+   n0: 18748 in 13 places, all below massif's threshold (1.00%)
+  n1: 156384 0xB4E0796: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+   n1: 156384 0xB293ACB: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+    n1: 156384 0xB5BF823: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+     n1: 156384 0xB5C19A9: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+      n1: 156384 0xB5A4EAA: ??? (in /usr/lib/nvidia/libnvidia-glcore.so.340.107)
+       n1: 156384 0x9A7C57E: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+        n1: 156384 0x9A7C72A: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+         n2: 156384 0x9AAF947: ??? (in /usr/lib/nvidia/libGL.so.340.107)
+          n1: 156384 0x4947748: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+           n1: 156384 0x4947B16: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+            n2: 156384 0x49155CE: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+             n2: 156384 0x48BB84C: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+              n1: 156384 0x48B5D4E: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+               n1: 156384 0x10FB6E: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+                n0: 156384 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+              n0: 0 in 1 place, below massif's threshold (1.00%)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 1302135 in 402 places, all below massif's threshold (1.00%)
+ n1: 472368 0x7338938: ??? (in /usr/lib/libX11.so.6.3.0)
+  n1: 472368 0x733663A: _XimLocalOpenIM (in /usr/lib/libX11.so.6.3.0)
+   n1: 472368 0x7334C36: _XimOpenIM (in /usr/lib/libX11.so.6.3.0)
+    n1: 472368 0x4942601: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+     n1: 472368 0x494900B: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+      n1: 472368 0x4916ECB: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+       n1: 472368 0x4895186: ??? (in /usr/lib/libSDL2-2.0.so.0.8.0)
+        n1: 472368 0x10FA7C: Screen::init() (in /home/bogdan/space_invaders_2015/original/iesire)
+         n0: 472368 0x10BC2D: main (in /home/bogdan/space_invaders_2015/original/iesire)
+ n1: 293156 0x5946F0A: ??? (in /usr/lib/libfreetype.so.6.16.1)
+  n1: 293156 0x5946FD8: ??? (in /usr/lib/libfreetype.so.6.16.1)
+   n0: 293156 in 20 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=77
+#-----------
+time=3398812337
+mem_heap_B=13258068
+mem_heap_extra_B=111260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=3496306665
+mem_heap_B=13258036
+mem_heap_extra_B=111260
+mem_stacks_B=0
+heap_tree=empty

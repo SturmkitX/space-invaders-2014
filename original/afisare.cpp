@@ -1,6 +1,6 @@
 #include "levels.h"
 #include <cstdio>
-#include <windows.h>
+#include <cstdlib>
 #include <sstream>
 
 void rezultate(int tip, char* nick, int score)
@@ -27,17 +27,7 @@ void rezultate(int tip, char* nick, int score)
         //ShellExecute( NULL, "open", "conus.jar", comanda.str().c_str(), NULL, SW_HIDE );
     }
 
-    SHELLEXECUTEINFO ShExecInfo = {0};
-    ShExecInfo.cbSize = sizeof(SHELLEXECUTEINFO);
-    ShExecInfo.fMask = SEE_MASK_NOCLOSEPROCESS;
-    ShExecInfo.hwnd = NULL;
-    ShExecInfo.lpVerb = "open";
-    ShExecInfo.lpFile = "conus.jar";
-    ShExecInfo.lpParameters = comanda.str().c_str();
-    ShExecInfo.lpDirectory = NULL;
-    ShExecInfo.nShow = SW_HIDE;
-    ShExecInfo.hInstApp = NULL;
-    ShellExecuteEx(&ShExecInfo);
-    WaitForSingleObject(ShExecInfo.hProcess,INFINITE);
-    //execl("conus.jar", comanda.str().c_str(), 0);
+    char params[100];
+    sprintf(params, "java -jar conus.jar %s", comanda.str().c_str());
+    system(params);
 }

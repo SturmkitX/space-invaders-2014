@@ -1,5 +1,7 @@
 #include "screen.h"
 #include <cstdio>
+#include <sys/types.h>
+#include <dirent.h>
 
 Screen::Screen()
 {
@@ -81,6 +83,7 @@ bool Screen::init()
 
     if( mWindow == NULL )
     {
+        printf("mWindow Init is NULL\n");
         return false;
     }
 
@@ -88,15 +91,24 @@ bool Screen::init()
     mSurface = SDL_GetWindowSurface( mWindow );
     if( mSurface == NULL )
     {
+        printf("mSurface Init is NULL\n");
         return false;
     }
 
     //Get renderer
+    mRenderer = SDL_GetRenderer( mWindow );
+    if( mRenderer )
+    {
+        SDL_DestroyRenderer( mRenderer );
+    }
+
     mRenderer = SDL_CreateRenderer( mWindow, -1, SDL_RENDERER_PRESENTVSYNC );
     if( mRenderer == NULL )
     {
+        printf("mRenderer Init is NULL: %s\n", SDL_GetError());
         return false;
     }
+    
 
     return true;
 }
@@ -159,24 +171,24 @@ void Screen::freeMusic()
 
 void Screen::detect_music()
 {
-    HANDLE dir;
-    WIN32_FIND_DATA file_data;
+    DIR *dir;
+    dirent *file_data;
     std::string nume_fisier, nume_complet;
-    bool e_director;
+    bool e_fisier;
 
-    dir = FindFirstFile( "muzica/*", &file_data );
-    if(dir == INVALID_HANDLE_VALUE)
+    dir = opendir("muzica");
+    if(dir == NULL)
     {
         printf( "Nu exista fisiere!\n" );
     }
 
-    do
+    while(file_data = readdir(dir))
     {
-        nume_fisier = file_data.cFileName;
+        nume_fisier = file_data->d_name;
         nume_complet = "muzica/" + nume_fisier;
-        e_director = (file_data.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) != 0;
+        e_fisier = file_data->d_type == DT_REG || file_data->d_type == DT_LNK;
 
-        if(!e_director && strcmp(nume_fisier.c_str(), "sound.ogg")
+        if(e_fisier && strcmp(nume_fisier.c_str(), "sound.ogg")
                         && (strstr(nume_fisier.c_str(), ".ogg") ||
                            strstr(nume_fisier.c_str(), ".wav") ||
                            strstr(nume_fisier.c_str(), ".mid") ||
@@ -184,11 +196,16 @@ void Screen::detect_music()
         {
             music_path.push_back(nume_complet);
         }
-    } while( FindNextFile(dir, &file_data) );
+    }
 
-    FindClose(dir);
+    closedir(dir);
 
     total_songs = music_path.size();
+    printf("Music size: %d\n", music_path.size());
+    for( int i=0; i<music_path.size(); i++ )
+    {
+        printf("Music name: %s\n", music_path[i]);
+    }
     curr_song = 0;
     last_changed_mus = -5000;
     mus_volume = 90;

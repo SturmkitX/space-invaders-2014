@@ -1,5 +1,0 @@
-single play
-multiplay client
-multi host
-rank
-exit
