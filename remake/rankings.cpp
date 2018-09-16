@@ -1,7 +1,9 @@
-#include "levels.h"
-#include "body.h"
 #include <cstdio>
 #include <cstring>
+
+#include "levels.h"
+#include "body.h"
+#include "database.h"
 
 void rankings(Screen* mScreen)
 {
@@ -47,27 +49,29 @@ void rankings(Screen* mScreen)
     SDL_RenderClear( rnd );
     meniu.render( rnd );
 
-    FILE* fin = fopen( "results.txt", "r" );
-    while( fgets( nume, 25, fin ) )
+    SCORE_ARRAY *scores = get_score_db();
+    printf(" Should print this shit\n ");
+    nr = scores->size;
+    memset( auxTex, 0, sizeof( auxTex ) );
+    for ( int i=0; i<scores->size; i++ )
     {
-        //fgets( nume, 25, fin );
-        nr++;
-        /*for(int i=0; i<=strlen(nume); i++)
-        {
-            if( nume[i] == 10 ) nume[i] = ' ';
-        }*/
-        nume[strlen(nume)-1] = ' ';
+        sprintf(nume, "%s ....... %d", scores->data[i].name, scores->data[i].score);
+        // nume[strlen(nume)-1] = ' ';
         printf( "%d ", strlen(nume) );
 
         auxSurf = TTF_RenderText_Solid( font, nume, color );
-        auxTex[nr] = SDL_CreateTextureFromSurface( rnd, auxSurf );
+        auxTex[i] = SDL_CreateTextureFromSurface( rnd, auxSurf );
         SDL_FreeSurface( auxSurf );
-        SDL_QueryTexture( auxTex[nr], NULL, NULL, &scorRect.w, &scorRect.h );
+        SDL_QueryTexture( auxTex[i], NULL, NULL, &scorRect.w, &scorRect.h );
 
         scorRect.y += scorRect.h;
-        SDL_RenderCopy( rnd, auxTex[nr], NULL, &scorRect );
+        SDL_RenderCopy( rnd, auxTex[i], NULL, &scorRect );
         scorRect.y += 10;
     }
+    
+    // free scores
+    free( scores->data );
+    free( scores );
 
     SDL_RenderCopy( rnd, titluTex, NULL, &titluRect );
     SDL_RenderPresent( rnd );
@@ -79,7 +83,7 @@ void rankings(Screen* mScreen)
 
     while( nr )
     {
-        SDL_DestroyTexture( auxTex[nr] );
+        SDL_DestroyTexture( auxTex[nr - 1] );
         nr--;
     }
 
@@ -125,6 +129,5 @@ void rankings(Screen* mScreen)
 
     TTF_CloseFont( font );
     SDL_DestroyTexture( inCase );
-    fclose( fin );
     meniu.free();
 }

@@ -24,8 +24,6 @@ class Screen
 
         SDL_Window* getWindow();
 
-        SDL_Surface* getWindowSurface();
-
         SDL_Renderer* getRenderer();
 
         int getDesktopWidth();

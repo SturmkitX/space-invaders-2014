@@ -1,14 +1,22 @@
 #ifndef _DATABASE_H
 #define _DATABASE_H
 
+#define MAX_NAME_LEN 45
+
 typedef struct
 {
-    void *buffer;
-    unsigned long length;
-} QUERY_VAR;
+    char name[MAX_NAME_LEN];
+    int score;
+} SCORE_VAR;
 
-void add_score_db(char*, int);
+typedef struct
+{
+    int size;
+    SCORE_VAR *data;
+} SCORE_ARRAY;
 
-void get_score_db();
+int add_score_db(char*, int);
+
+SCORE_ARRAY* get_score_db();
 
 #endif  // _DATABASE_H

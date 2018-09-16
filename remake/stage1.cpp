@@ -1,9 +1,11 @@
-#include "levels.h"
-#include "body.h"
 #include <cstdio>
 #include <vector>
 #include <algorithm>
 #include <ctime>
+
+#include "levels.h"
+#include "body.h"
+#include "database.h"
 
 bool se_ating( SDL_Rect &r1, SDL_Rect &r2 )
 {
@@ -458,7 +460,7 @@ void stage1(Screen* mScreen)
 
         if( pHealth <= 0 )
         {
-            rezultate( 1, mScreen->getPlayer(), pScore );
+            add_score_db( mScreen->getPlayer(), pScore );
             paused = true;
             SDL_Delay( 2000 );
             quit = true;

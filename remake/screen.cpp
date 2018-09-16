@@ -6,7 +6,6 @@
 Screen::Screen()
 {
     mWindow = NULL;
-    mSurface = NULL;
     mRenderer = NULL;
     bgMusic = NULL;
 
@@ -87,14 +86,6 @@ bool Screen::init()
         return false;
     }
 
-    //Get surface
-    mSurface = SDL_GetWindowSurface( mWindow );
-    if( mSurface == NULL )
-    {
-        printf("mSurface Init is NULL\n");
-        return false;
-    }
-
     //Get renderer
     mRenderer = SDL_GetRenderer( mWindow );
     if( mRenderer )
@@ -116,12 +107,10 @@ bool Screen::init()
 void Screen::close()
 {
     //Destroy everything
-    SDL_FreeSurface( mSurface );
-    SDL_DestroyWindow( mWindow );
     SDL_DestroyRenderer( mRenderer );
+    SDL_DestroyWindow( mWindow );
 
     mWindow = NULL;
-    mSurface = NULL;
     mRenderer = NULL;
 
     Mix_CloseAudio();
@@ -135,11 +124,6 @@ void Screen::close()
 SDL_Window* Screen::getWindow()
 {
     return mWindow;
-}
-
-SDL_Surface* Screen::getWindowSurface()
-{
-    return mSurface;
 }
 
 SDL_Renderer* Screen::getRenderer()
@@ -204,7 +188,7 @@ void Screen::detect_music()
     printf("Music size: %d\n", music_path.size());
     for( int i=0; i<music_path.size(); i++ )
     {
-        printf("Music name: %s\n", music_path[i]);
+        fprintf(stderr, "Music name: %s\n", music_path[i].c_str());
     }
     curr_song = 0;
     last_changed_mus = -5000;

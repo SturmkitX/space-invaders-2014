@@ -82,7 +82,7 @@ void menu1(Screen* mScreen)
             if( e.button.y > but4.getY() && e.button.y < but4.getY() + but4.getHeight() )
             {
                 //Rankings
-                rezultate( 2, "n", 8 );
+                // rezultate( 2, "n", 8 );
                 //SDL_Delay( 1500 );
                 rankings( mScreen );
                 toRender = true;
