@@ -2,7 +2,7 @@ CC = g++
 CFLAGS = -Og -g -I /usr/include/SDL2 -I /usr/include/mariadb -I /usr/include/mariadb/mysql
 LFLAGS = -lSDL2 -lSDL2_image -lSDL2_net -lSDL2_ttf -lSDL2_mixer \
 	-L /usr/lib/mariadb -lmariadb -lssl -ldl -lm -lpthread
-OBJS = afisare.o body.o choose_name.o menu_1.o nave_net.o rankings.o \
+OBJS = afisare.o body.o choose_name.o menu_1.o rankings.o \
 	screen.o stage1.o start_all.o status.o stage.o
 OUTPUT_NAME = nave
 
@@ -55,3 +55,6 @@ clean_obj:
 
 prepare_media: muzica media
 	cp -r muzica media bin/
+
+small: start_all.cpp stage.cpp stage1.cpp
+	$(CC) $(CFLAGS) $(LFLAGS) start_all.cpp stage.cpp stage1.cpp -o mini

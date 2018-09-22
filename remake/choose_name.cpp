@@ -1,8 +1,10 @@
-#include "levels.h"
-#include "body.h"
 #include <cstdio>
 #include <string>
 #include <cstring>
+
+#include "levels.h"
+#include "body.h"
+#include "stage1.h"
 
 void choose_name( Screen* mScreen, int tip )
 {
@@ -18,7 +20,7 @@ void choose_name( Screen* mScreen, int tip )
     bool toRender = false;
     int limita;
     char cerinta[20];
-    Body meniu;
+    Body meniu( rnd, "media/meniu.png" );
 
     if( tip == 1 )
     {
@@ -54,8 +56,6 @@ void choose_name( Screen* mScreen, int tip )
     tRect2.x = 75;
     tRect2.y = 200;
 
-    meniu.create( rnd, "media/meniu.png" );
-
     SDL_RenderClear( rnd );
 
     meniu.render( rnd );
@@ -85,11 +85,13 @@ void choose_name( Screen* mScreen, int tip )
 
                 if( tip == 1 )
                 {
-                    stage1( mScreen );
+                    Stage *stg1 = new SinglePlayer_Stage1( mScreen );
+                    stg1->mainLoop();
+                    delete stg1;
                 }
                 else
                 {
-                    nave_net( mScreen, 2 );
+                    // nave_net( mScreen, 2 );
                 }
             }
             else
@@ -150,7 +152,6 @@ void choose_name( Screen* mScreen, int tip )
 
 
     //Eliberare
-    meniu.free();
     SDL_DestroyTexture( rand1 );
     SDL_DestroyTexture( rand2 );
     TTF_CloseFont( font );

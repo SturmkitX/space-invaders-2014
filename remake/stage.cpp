@@ -1,13 +1,17 @@
 #include "stage.h"
 
-Stage::Stage(Screen *mScreen, bool online, int role)
+int Stage::DESK_W;
+int Stage::DESK_H;
+
+Stage::Stage(Screen *mScreen)
 {
+    this->mScreen = mScreen;
     this->rnd = mScreen->getRenderer();
     this->state = SDL_GetKeyboardState( NULL );
     this->quit = false;
     this->paused = false;
-    this->online = online;
-    this->role = role;
+    Stage::DESK_W = mScreen->getDesktopWidth();
+    Stage::DESK_H = mScreen->getDesktopHeight();
 }
 
 Stage::~Stage()
@@ -20,8 +24,14 @@ void Stage::mainLoop()
     this->init();
     while ( !this->quit )
     {
-        this->key_events();
+        while ( SDL_PollEvent(&e) )
+        {
+            this->window_events();
+        }
+        this->keyboard_events();
+        if ( !paused ) continue;
         this->others();
+        this->render();
     }
 }
 
@@ -30,7 +40,12 @@ void Stage::closeLoop()
     this->quit = true;
 }
 
-bool Stage::getPaused()
+void Stage::forceClose()
+{
+    mScreen->force_quit = true;
+}
+
+bool Stage::isPaused()
 {
     return this->paused;
 }
@@ -38,16 +53,6 @@ bool Stage::getPaused()
 void Stage::setPaused(bool paused)
 {
     this->paused = paused;
-}
-
-bool Stage::isOnline()
-{
-    return this->online;
-}
-
-int Stage::getRole()
-{
-    return this->role;
 }
 
 bool Stage::getCollision( SDL_Rect *r1, SDL_Rect *r2 )
@@ -60,4 +65,9 @@ bool Stage::getCollision( SDL_Rect *r1, SDL_Rect *r2 )
         }
     }
     return false;
+}
+
+Screen* Stage::getScreen()
+{
+    return mScreen;
 }

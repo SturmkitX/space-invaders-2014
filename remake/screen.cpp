@@ -75,6 +75,7 @@ bool Screen::init()
     //Get window
     SDL_GetDesktopDisplayMode( 0, &display );
     DESK_W = display.w;
+    DESK_H = display.h;
 
     mWindow = SDL_CreateWindow( "Space Invaders", SDL_WINDOWPOS_UNDEFINED,
                                SDL_WINDOWPOS_UNDEFINED, DEF_W, DEF_H,
@@ -99,7 +100,7 @@ bool Screen::init()
         printf("mRenderer Init is NULL: %s\n", SDL_GetError());
         return false;
     }
-    
+
 
     return true;
 }
@@ -134,6 +135,11 @@ SDL_Renderer* Screen::getRenderer()
 int Screen::getDesktopWidth()
 {
     return DESK_W;
+}
+
+int Screen::getDesktopHeight()
+{
+    return DESK_H;
 }
 
 char* Screen::getPlayer()

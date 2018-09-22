@@ -3,11 +3,7 @@
 #define _LEVELS_H
 #include "screen.h"
 
-void stage1(Screen*);
-
-void test_net(Screen*, bool);
-
-void nave_net(Screen*, int);
+// void nave_net(Screen*, int);
 
 SDL_Texture* afisare_status(int, int, SDL_Renderer*);
 

@@ -7,13 +7,9 @@ class Body
 {
     public:
 
-        Body();
+        Body(SDL_Renderer*, const char*);
 
         ~Body();
-
-        void create(SDL_Renderer*, char*);
-
-        void free();
 
         void setRect(int, int, int, int);
 

@@ -28,6 +28,8 @@ class Screen
 
         int getDesktopWidth();
 
+        int getDesktopHeight();
+
         char* getPlayer();
 
         void setMusic();
@@ -53,6 +55,7 @@ class Screen
         int DEF_H;
         SDL_DisplayMode display;
         int DESK_W;
+        int DESK_H;
         bool server;
         char playerName[20];
         Mix_Music* bgMusic;

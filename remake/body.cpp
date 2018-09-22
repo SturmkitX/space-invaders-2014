@@ -1,33 +1,31 @@
 #include "body.h"
 
-Body::Body()
+Body::Body(SDL_Renderer* rnd, const char *path)
 {
     rect.x = rect.y = rect.w = rect.h = 0;
-    texture = NULL;
     rotation = 0.0;
     center.x = center.y = 0;
     flip = SDL_FLIP_NONE;
+
+    if (path)
+    {
+        //The surface
+        SDL_Surface* orig = IMG_Load( path );
+
+        //Convert to texture
+        texture = SDL_CreateTextureFromSurface( rnd, orig );
+        SDL_QueryTexture( texture, NULL, NULL, &(rect.w), &(rect.h) );
+
+        //Delete old surface
+        SDL_FreeSurface( orig );
+    }
+    else
+    {
+        texture = NULL;
+    }
 }
 
 Body::~Body()
-{
-    //
-}
-
-void Body::create(SDL_Renderer* rnd, char *path)
-{
-    //The surface
-    SDL_Surface* orig = IMG_Load( path );
-
-    //Convert to texture
-    texture = SDL_CreateTextureFromSurface( rnd, orig );
-    SDL_QueryTexture( texture, NULL, NULL, &(rect.w), &(rect.h) );
-
-    //Delete old surface
-    SDL_FreeSurface( orig );
-}
-
-void Body::free()
 {
     if( texture != NULL )
     {

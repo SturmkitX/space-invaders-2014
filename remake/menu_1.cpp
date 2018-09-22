@@ -10,20 +10,18 @@ void menu1(Screen* mScreen)
     bool toRender = false;
     const Uint8 *state = SDL_GetKeyboardState( NULL );
 
-    Body but1, but2, but3, but4, but5, meniu;
-    but1.create( rnd, "media/single player.png" );
-    but2.create( rnd, "media/multiplayer client.png" );
-    but3.create( rnd, "media/multiplayer host.png" );
-    but4.create( rnd, "media/rank.png" );
-    but5.create( rnd, "media/exit.png" );
+    Body but1( rnd, "media/single player.png" );
+    Body but2( rnd, "media/multiplayer client.png" );
+    Body but3( rnd, "media/multiplayer host.png" );
+    Body but4( rnd, "media/rank.png" );
+    Body but5( rnd, "media/exit.png" );
+    Body meniu( rnd, "media/meniu.png" );
 
     but1.setPosition( -5, 55 );
     but2.setPosition( -5, 155 );
     but3.setPosition( -5, 275 );
     but4.setPosition( -5, 395 );
     but5.setPosition( -5, 495 );
-
-    meniu.create(rnd, "media/meniu.png");
 
     SDL_RenderClear( rnd );
     meniu.render( rnd );
@@ -75,7 +73,7 @@ void menu1(Screen* mScreen)
             if( e.button.y > but3.getY() && e.button.y < but3.getY() + but3.getHeight() )
             {
                 //Multiplayer Host
-                nave_net( mScreen, 1 );
+                // nave_net( mScreen, 1 );
                 toRender = true;
             }
             else
@@ -130,11 +128,4 @@ void menu1(Screen* mScreen)
             quit = true;
         }
     }
-
-    meniu.free();
-    but1.free();
-    but2.free();
-    but3.free();
-    but4.free();
-    but5.free();
 }

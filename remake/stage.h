@@ -4,40 +4,40 @@
 #include <SDL.h>
 #include "screen.h"
 
-#define MULTIPLAYER_SERVER 0
-#define MULTIPLAYER_CLIENT 1
-
 class Stage
 {
     protected:
         SDL_Event e;
+        Screen *mScreen;
         SDL_Renderer* rnd;
         const Uint8 *state;
         bool quit;
         bool paused;
-        bool online;    // represents a multiplayer session
-        int role;
+        static int DESK_W;
+        static int DESK_H;
 
-    public:
-        Stage(Screen*, bool, int);
-        ~Stage();
-
-        void mainLoop();
         void closeLoop();
+        void forceClose();
 
-        bool getPaused();
+        bool isPaused();
         void setPaused(bool);
 
-        bool isOnline();
-
-        int getRole();
-
-        virtual void init() = 0;
-        virtual void key_events() = 0;
-        virtual void others() = 0;
+        Screen* getScreen();
 
         /** First Rect is the one below the second **/
         bool getCollision( SDL_Rect*, SDL_Rect* );
+
+        virtual void init() = 0;
+        virtual void window_events() = 0;
+        virtual void keyboard_events() = 0;
+        virtual void others() = 0;
+        virtual void render() = 0;
+
+    public:
+        Stage(Screen*);
+        ~Stage();
+
+        void mainLoop();
 
 };
 

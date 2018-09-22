@@ -1,7 +1,10 @@
-#include "screen.h"
-#include "levels.h"
 #include <cstdio>
 #include <cstring>
+
+#include "screen.h"
+// #include "levels.h"
+#include "stage.h"
+#include "stage1.h"
 
 int main(int argc, char* argv[])
 {
@@ -21,7 +24,12 @@ int main(int argc, char* argv[])
         mScreen.switch_song(1);
         Mix_VolumeMusic( 90 );
 
-        menu1( &mScreen );
+        // menu1( &mScreen );
+        Stage *stg;
+        SinglePlayer_Stage1 *stg1 = new SinglePlayer_Stage1( &mScreen );
+        stg = stg1;
+        stg->mainLoop();
+        delete stg;
 
         mScreen.freeMusic();
     }

@@ -18,7 +18,7 @@ void rankings(Screen* mScreen)
     SDL_Color color;
     SDL_Texture* auxTex[10];
     SDL_Texture* inCase;
-    Body meniu;
+    Body meniu( rnd, "media/meniu.png" );
     const Uint8 *state = SDL_GetKeyboardState( NULL );
 
     SDL_Rect scorRect;
@@ -44,7 +44,6 @@ void rankings(Screen* mScreen)
     inCase = SDL_CreateTexture( rnd, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET,
                                800, 600 );
     SDL_SetRenderTarget( rnd, inCase );
-    meniu.create( rnd, "media/meniu.png" );
 
     SDL_RenderClear( rnd );
     meniu.render( rnd );
@@ -68,7 +67,7 @@ void rankings(Screen* mScreen)
         SDL_RenderCopy( rnd, auxTex[i], NULL, &scorRect );
         scorRect.y += 10;
     }
-    
+
     // free scores
     free( scores->data );
     free( scores );
@@ -129,5 +128,4 @@ void rankings(Screen* mScreen)
 
     TTF_CloseFont( font );
     SDL_DestroyTexture( inCase );
-    meniu.free();
 }
